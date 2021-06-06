@@ -51,9 +51,17 @@
             }
 
             p {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
                 outline: 2px rgb(87, 87, 87);
-                text-shadow: 2px 2px 6px rgb(104, 104, 104);;
+                text-shadow: 2px 2px 6px rgb(104, 104, 104);
             }
+
+            p.outset {
+                border-style: unset;
+                width: 80px;
+                padding-left: 12px;
+            }
+
         </style>
         
         <title>loueque.dev</title>
@@ -74,23 +82,27 @@
         <!Sec. 1>
         <div style="padding-left:16px">
             <h1>Home</h2>
-            <p style="background-color:#f2f2f2; color: rgb(112, 112, 112); box-shadow: 2px; background-size: 20%;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ullam ex quis vero et dolores adipisci quasi minima dolorem amet. Ratione inventore possimus rerum placeat corporis enim labore, quae harum?</p>
-            <p><a href="https://github.com/loueque/loueque.dev">Open Source website!</a></p>
-            <p><a href="https://github.com/loueque">Main Profile</a></p>
+            <p style="background-color:#f2f2f2; color: rgb(112, 112, 112); box-shadow: 2px; background-size: 20%;"></p>
+            <p style="padding-left: 12px;"><a href="https://github.com/loueque/loueque.dev">Open Source website!</a></p>
+            <p style="padding-left: 12px;"><a href="https://github.com/loueque">Main Profile!</a></p>
+            
+            <p class="outset" style="padding-left: 12px;"><a href="#AboutMe"><b>About Me</b></a></p>
+            <p class="outset" style="padding-left: 12px;"><a href="#Work"><b>My Work</b></a></p>
+            <p class="outset" style="padding-left: 12px;"><a href="#Available"><b>Availability</b></a></p>
         </div>
 
         <!Sec. 2>
-        <div style="padding-left: 12px;">
+        <div style="padding-left: 12px;" id="AboutMe">
             <h2>About Me</h2>
         </div>
 
         <!Sec. 3>
-        <div style="padding-left: 12px;">
+        <div style="padding-left: 12px;" id="Work">
             <h2>My Work</h2>
         </div>
 
         <!Sec. 4>
-        <div style="padding-left: 12px;">
+        <div style="padding-left: 12px;" id="Available">
             <h2>Availability</h2>
         </div>
     </body>
